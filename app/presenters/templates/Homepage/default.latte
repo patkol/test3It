@@ -1,0 +1,13 @@
+{block content}
+{foreach $data as $row}
+    <table id="data">
+        <tr>
+            <td> <span>{$row->id}</span></td>
+            <td> <span>{$row->jmeno}</span></td>
+            <td> <span>{$row->prijmeni}</span></td>
+            <td> <span>{$row->datum}</span></td>
+        </tr>
+    </table>
+
+{/foreach}
+{/block}

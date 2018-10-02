@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{ifset title}{include title|stripHtml} | {/ifset}Patrik Kolenovský</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/style.css">
+    {include header.latte}
+    {block scripts}
+        <script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="{$basePath}/js/scripts.js"></script>
+    {/block}
+</head>
+
+<body>
+{include content}
+</body>
+</html>
